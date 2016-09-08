@@ -1,0 +1,6 @@
+version: 1.0
+shards:
+  CrystalIrc:
+    git: git@git.ctr.lc:gewo/CrystalIrc
+    commit: bef80b09a3c01f9a57f4c8b52d4c062d3b7b164c
+

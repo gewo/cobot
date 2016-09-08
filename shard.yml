@@ -1,0 +1,11 @@
+name: cobot
+version: 0.1.0
+
+authors:
+  - Gebhard Woestemeyer <g@ctr.lc>
+
+license: MIT
+
+dependencies:
+  CrystalIrc:
+    git: https://git.ctr.lc/gewo/CrystalIrc
