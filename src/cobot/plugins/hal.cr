@@ -5,7 +5,7 @@ module Cobot::Plugins::Hal
     bot.on("PRIVMSG", message: /open.*doors/i) do |msg, match|
       msg.reply answer_open_doors(msg.hl)
     end
-    bot.on("PRIVMSG", message: /what.*problem?/i) do |msg, match|
+    bot.on("PRIVMSG", message: /what.*problem/i) do |msg, match|
       msg.reply answer_problem(msg.hl)
     end
   end
