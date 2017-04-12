@@ -8,7 +8,7 @@ module Cobot::Plugins::Github
     bind_pull_request_info(bot)
   end
 
-  PATTERN = /(?:[ ]+|^)([a-zA-Z]+\/[a-zA-Z]+|)#(\d{1,5})\b/
+  PATTERN = /(?:[ ]+|^)([a-zA-Z][a-zA-Z0-9]+\/[a-zA-Z][a-zA-Z0-9]+|)#(\d{1,5})\b/
   private def bind_pull_request_info(bot)
     bot.on("PRIVMSG", message: PATTERN) do |msg, match|
       pull_requests = msg.message.as(String).scan PATTERN
